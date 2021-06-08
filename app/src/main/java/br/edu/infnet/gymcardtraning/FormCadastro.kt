@@ -5,7 +5,10 @@ import android.os.Bundle
 import android.widget.Toast
 import br.edu.infnet.gymcardtraning.databinding.ActivityFormCadastroBinding
 import br.edu.infnet.gymcardtraning.databinding.ActivityFormLoginBinding
+import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
 class FormCadastro : AppCompatActivity() {
 
@@ -69,7 +72,16 @@ class FormCadastro : AppCompatActivity() {
                 binding.editSenha.setText("")
             }
         }.addOnFailureListener {
-            mensagem_erro.setText("Erro ao cadastrar usuario")
+            var erro = it
+
+            when{
+                erro is FirebaseAuthWeakPasswordException -> mensagem_erro.setText("Digite uma senha com no minimo 6 caracteres.")
+                erro is FirebaseAuthUserCollisionException -> mensagem_erro.setText("Esta conta ja foi cadastrada.")
+                erro is FirebaseNetworkException -> mensagem_erro.setText("Sem conexão na internet.")
+                else -> mensagem_erro.setText("Erro ao cadastrar usuario.")
+            }
+
+
         }
     }
 
