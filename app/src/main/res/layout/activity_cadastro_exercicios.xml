@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_80"
+    tools:context=".Fragments.CadastroExercicios">
+
+    <ImageView
+        android:id="@+id/foto_exercicio"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/bt_selecionar_foto"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/black"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/foto_exercicio"
+        app:layout_constraintEnd_toEndOf="@+id/foto_exercicio"
+        app:layout_constraintStart_toStartOf="@+id/foto_exercicio"
+        app:layout_constraintTop_toTopOf="@+id/foto_exercicio" />
+
+    <EditText
+        android:id="@+id/edit_nome_exercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_login"
+        android:hint="Nome do exercicio"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/foto_exercicio" />
+
+    <EditText
+        android:id="@+id/edit_qtd_exercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_login"
+        android:hint="Tempo do exercicio"
+        android:inputType="time"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome_exercicio"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_descanso_exercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_login"
+        android:hint="Tempo de descanso"
+        android:inputType="time"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_qtd_exercicio" />
+
+    <Button
+        android:id="@+id/bt_cadastrar_exercicio_firebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/green_logo"
+        android:padding="15dp"
+        android:text="Cadastrar exercicio"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_descanso_exercicio"
+        app:layout_constraintVertical_bias="0.076"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

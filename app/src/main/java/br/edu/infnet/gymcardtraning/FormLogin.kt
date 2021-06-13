@@ -49,7 +49,7 @@ class FormLogin : AppCompatActivity() {
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email,senha).addOnCompleteListener {
             if (it.isSuccessful){
                 Toast.makeText(this, "Login efetuado com Sucesso!", Toast.LENGTH_LONG).show()
-                IrParaTelaDeExecicio()
+                IrParaHome()
             }
 
         }.addOnFailureListener {
@@ -69,12 +69,12 @@ class FormLogin : AppCompatActivity() {
     private fun VerificarUsuarioLogado(){
         val usuarioLogado = FirebaseAuth.getInstance().currentUser
         if (usuarioLogado != null ){
-            IrParaTelaDeExecicio()
+            IrParaHome()
         }
     }
 
-    private fun IrParaTelaDeExecicio(){
-        val intent = Intent(this, ListaExercicios::class.java)
+    private fun IrParaHome(){
+        val intent = Intent(this, Home::class.java)
         startActivity(intent)
         finish()
     }
