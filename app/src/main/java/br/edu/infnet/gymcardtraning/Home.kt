@@ -5,20 +5,13 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
-import br.edu.infnet.gymcardtraning.Fragments.CadastroExercicios
-import br.edu.infnet.gymcardtraning.Fragments.Exercios
+import br.edu.infnet.gymcardtraning.Fragments.Exercicios
 import com.google.firebase.auth.FirebaseAuth
 
 class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -31,7 +24,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val exerciciosFragment = Exercios()
+        val exerciciosFragment = Exercicios()
         val fragment = supportFragmentManager.beginTransaction()
         fragment.replace(R.id.frameContainer,exerciciosFragment)
         fragment.commit()
@@ -56,7 +49,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         val id = item.itemId
 
         if (id == R.id.nav_execicios){
-            val exerciciosFragment = Exercios()
+            val exerciciosFragment = Exercicios()
             val fragment = supportFragmentManager.beginTransaction()
             fragment.replace(R.id.frameContainer,exerciciosFragment)
             fragment.commit()
