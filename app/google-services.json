@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1016742247963",
+    "project_id": "gymcardtraning",
+    "storage_bucket": "gymcardtraning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016742247963:android:53a29a29d8ea61403d42be",
+        "android_client_info": {
+          "package_name": "br.edu.infnet.gymcardtraning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016742247963-h6clb7hp7i5582mu9huep6nun4pjh48j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3zKqJ07nu3h7YYmM5TTC5mkDg07FEYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016742247963-h6clb7hp7i5582mu9huep6nun4pjh48j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
