@@ -4,4 +4,7 @@
     <string name="admob_app_id">ca-app-pub-8382775046418329~9696781958</string>
 
     <string name="admob_banner_ad">ca-app-pub-8382775046418329/5757536942</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

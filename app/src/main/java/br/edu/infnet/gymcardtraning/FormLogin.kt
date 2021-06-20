@@ -90,7 +90,7 @@ class FormLogin : AppCompatActivity() {
     }
 
     private fun IrParaTelaDeExecicio(){
-        val intent = Intent(this, ListaExercicios::class.java)
+        val intent = Intent(this, Home::class.java)
         startActivity(intent)
         finish()
     }
