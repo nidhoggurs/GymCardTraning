@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "1016742247963",
-    "project_id": "gymcardtraning",
-    "storage_bucket": "gymcardtraning.appspot.com"
+    "project_number": "1029427880748",
+    "firebase_url": "https://gymcardtraning-baa23-default-rtdb.firebaseio.com",
+    "project_id": "gymcardtraning-baa23",
+    "storage_bucket": "gymcardtraning-baa23.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1016742247963:android:53a29a29d8ea61403d42be",
+        "mobilesdk_app_id": "1:1029427880748:android:8f2538620493b946970289",
         "android_client_info": {
           "package_name": "br.edu.infnet.gymcardtraning"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1016742247963-h6clb7hp7i5582mu9huep6nun4pjh48j.apps.googleusercontent.com",
+          "client_id": "1029427880748-sgb3dgisekmmaahmrmubahsml3choafg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.infnet.gymcardtraning",
+            "certificate_hash": "4844a3298a19b0961e1c4747d1da54c1a6ada4aa"
+          }
+        },
+        {
+          "client_id": "1029427880748-bm836po89k7kanofj4qojhbadia5vdb9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAJ3zKqJ07nu3h7YYmM5TTC5mkDg07FEYk"
+          "current_key": "AIzaSyDeg__jdTJ4D1sMB_KBc7eeD12mJ_khYOY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1016742247963-h6clb7hp7i5582mu9huep6nun4pjh48j.apps.googleusercontent.com",
+              "client_id": "1029427880748-bm836po89k7kanofj4qojhbadia5vdb9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
